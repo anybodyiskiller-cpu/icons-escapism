@@ -78,8 +78,16 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/f1.png"
     },
     {
+      "name": "finalcut",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/finalcut.png"
+    },
+    {
       "name": "findmy",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/findmy.png"
+    },
+    {
+      "name": "fitness",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/fitness.png"
     },
     {
       "name": "forward",
@@ -142,6 +150,10 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paramount.png"
     },
     {
+      "name": "password",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/password.png"
+    },
+    {
       "name": "paypal",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paypal.png"
     },
@@ -168,6 +180,10 @@
     {
       "name": "redteago",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/redteago.png"
+    },
+    {
+      "name": "safari",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/safari.png"
     },
     {
       "name": "senplayer",
@@ -284,6 +300,10 @@
     {
       "name": "wallet",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/wallet.png"
+    },
+    {
+      "name": "weather",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/weather.png"
     },
     {
       "name": "wechat",
