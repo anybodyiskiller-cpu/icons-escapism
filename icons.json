@@ -70,8 +70,16 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/ebay.png"
     },
     {
+      "name": "email",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/email.png"
+    },
+    {
       "name": "f1",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/f1.png"
+    },
+    {
+      "name": "findmy",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/findmy.png"
     },
     {
       "name": "forward",
@@ -92,6 +100,10 @@
     {
       "name": "grok",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/grok.png"
+    },
+    {
+      "name": "hulu",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/hulu.png"
     },
     {
       "name": "infuse",
@@ -126,6 +138,10 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/okx.png"
     },
     {
+      "name": "paramount",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paramount.png"
+    },
+    {
       "name": "paypal",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paypal.png"
     },
@@ -136,6 +152,10 @@
     {
       "name": "podcasts",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/podcasts.png"
+    },
+    {
+      "name": "primevideo",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/primevideo.png"
     },
     {
       "name": "quan",
@@ -220,6 +240,10 @@
     {
       "name": "teslataxi",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/teslataxi.png"
+    },
+    {
+      "name": "testflight",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/testflight.png"
     },
     {
       "name": "threads",
