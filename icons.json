@@ -2,10 +2,6 @@
   "name": "My Icon Pack",
   "icons": [
     {
-      "name": "IMG 7278",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/IMG_7278.png"
-    },
-    {
       "name": "McDonalds",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/McDonalds.png"
     },
@@ -28,6 +24,10 @@
     {
       "name": "google",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png"
+    },
+    {
+      "name": "instagram",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.png"
     },
     {
       "name": "netflix",
