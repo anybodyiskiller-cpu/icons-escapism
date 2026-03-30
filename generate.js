@@ -1,3 +1,4 @@
+console.log("📂 当前目录文件夹结构:", fs.readdirSync("./"));
 const fs = require("fs");
 const path = require("path");
 
