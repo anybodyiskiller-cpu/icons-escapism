@@ -82,6 +82,10 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png"
     },
     {
+      "name": "news",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/news.png"
+    },
+    {
       "name": "paypal",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paypal.png"
     },
@@ -90,12 +94,20 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/playstation.png"
     },
     {
+      "name": "podcasts",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/podcasts.png"
+    },
+    {
       "name": "reddit",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/reddit.png"
     },
     {
       "name": "senplayer",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/senplayer.png"
+    },
+    {
+      "name": "shazam",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/shazam.png"
     },
     {
       "name": "shop",
@@ -148,6 +160,10 @@
     {
       "name": "ultramoblie",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/ultramoblie.png"
+    },
+    {
+      "name": "wallet",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/wallet.png"
     },
     {
       "name": "wechat",
