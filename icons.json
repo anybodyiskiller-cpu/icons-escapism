@@ -54,12 +54,20 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/ebay.png"
     },
     {
+      "name": "forward",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/forward.png"
+    },
+    {
       "name": "github",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png"
     },
     {
       "name": "google",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png"
+    },
+    {
+      "name": "infuse",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/infuse.png"
     },
     {
       "name": "instagram.PNG",
@@ -80,6 +88,10 @@
     {
       "name": "reddit",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/reddit.png"
+    },
+    {
+      "name": "senplayer",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/senplayer.png"
     },
     {
       "name": "shop",
