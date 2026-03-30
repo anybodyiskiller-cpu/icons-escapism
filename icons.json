@@ -18,6 +18,10 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/amazon.png"
     },
     {
+      "name": "applemusic",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/applemusic.png"
+    },
+    {
       "name": "bilibili",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bilibili.png"
     },
@@ -56,10 +60,6 @@
     {
       "name": "tiktok",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png"
-    },
-    {
-      "name": "tv",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png"
     },
     {
       "name": "twitch",
