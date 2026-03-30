@@ -2,10 +2,6 @@
   "name": "My Icon Pack",
   "icons": [
     {
-      "name": "Chatgpt.PNG",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/Chatgpt.PNG"
-    },
-    {
       "name": "Hbomax.PNG",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/Hbomax.PNG"
     },
@@ -142,6 +138,10 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/shop.png"
     },
     {
+      "name": "snkrs",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/snkrs.png"
+    },
+    {
       "name": "spotify",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png"
     },
@@ -152,6 +152,10 @@
     {
       "name": "support",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/support.png"
+    },
+    {
+      "name": "supreme",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/supreme.png"
     },
     {
       "name": "surge",
@@ -196,6 +200,10 @@
     {
       "name": "ultramoblie",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/ultramoblie.png"
+    },
+    {
+      "name": "uo",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/uo.png"
     },
     {
       "name": "wallet",
