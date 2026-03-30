@@ -2,10 +2,6 @@
   "name": "My Icon Pack",
   "icons": [
     {
-      "name": "IMG 7361",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/IMG_7361.png"
-    },
-    {
       "name": "McDonalds",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/McDonalds.png"
     },
@@ -68,6 +64,10 @@
     {
       "name": "wechat",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/wechat.png"
+    },
+    {
+      "name": "x",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png"
     },
     {
       "name": "xiaohongshu",
