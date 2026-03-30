@@ -1,10 +1,5 @@
 [
   {
-    "name": "IMG 7345",
-    "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/IMG_7345.png",
-    "path": "icons/IMG_7345.png"
-  },
-  {
     "name": "McDonalds",
     "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/McDonalds.png",
     "path": "icons/McDonalds.png"
@@ -33,5 +28,10 @@
     "name": "tiktok",
     "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png",
     "path": "icons/tiktok.png"
+  },
+  {
+    "name": "twitch",
+    "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/twitch.png",
+    "path": "icons/twitch.png"
   }
 ]
