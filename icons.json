@@ -34,6 +34,14 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bilibili.png"
     },
     {
+      "name": "bitget",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bitget.png"
+    },
+    {
+      "name": "bitget2",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bitget2.png"
+    },
+    {
       "name": "chatgpt",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png"
     },
@@ -112,6 +120,10 @@
     {
       "name": "news",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/news.png"
+    },
+    {
+      "name": "okx",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/okx.png"
     },
     {
       "name": "paypal",
