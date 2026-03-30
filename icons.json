@@ -10,10 +10,6 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/Hbomax.PNG"
     },
     {
-      "name": "Jean.PNG",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/Jean.PNG"
-    },
-    {
       "name": "McDonalds",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/McDonalds.png"
     },
@@ -94,6 +90,10 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png"
     },
     {
+      "name": "steam",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/steam.png"
+    },
+    {
       "name": "support",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/support.png"
     },
@@ -104,6 +104,14 @@
     {
       "name": "telegram",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png"
+    },
+    {
+      "name": "tesla",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tesla.png"
+    },
+    {
+      "name": "teslataxi",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/teslataxi.png"
     },
     {
       "name": "tiktok",
