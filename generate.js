@@ -16,11 +16,16 @@ const icons = files.map(file => {
     .trim();
 
   return {
-    "name": name,           // 显示名称
-    "url": `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${file}`,
-    "path": `icons/${file}` // 部分 App 需要这个字段
+    "name": name,
+    "url": `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${file}`
   };
 });
 
-fs.writeFileSync(OUTPUT, JSON.stringify(icons, null, 2));
+// 关键修改：包一层对象，很多 App 要求这样
+const result = {
+  "name": "My Icon Pack",     // 可以随便改
+  "icons": icons
+};
+
+fs.writeFileSync(OUTPUT, JSON.stringify(result, null, 2));
 console.log(`✅ 生成完成！共 ${icons.length} 个图标`);
