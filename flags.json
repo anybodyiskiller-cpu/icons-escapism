@@ -3,36 +3,168 @@
   "description": "由脚本自动生成的旗帜图标库",
   "icons": [
     {
+      "name": "ARGENTINA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/argentina.png"
+    },
+    {
+      "name": "AUSTRALIA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/australia.png"
+    },
+    {
+      "name": "BRAZIL",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/brazil.png"
+    },
+    {
+      "name": "CANADA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/canada.png"
+    },
+    {
+      "name": "CANARY-ISLANDS",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/canary-islands.png"
+    },
+    {
+      "name": "CHAD",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/chad.png"
+    },
+    {
+      "name": "CHILE",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/chile.png"
+    },
+    {
       "name": "CHINA",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/china.png"
+    },
+    {
+      "name": "COCOS-ISLAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/cocos-island.png"
+    },
+    {
+      "name": "CORSICA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/corsica.png"
+    },
+    {
+      "name": "CURACAO",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/curacao.png"
+    },
+    {
+      "name": "CZECH-REPUBLIC",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/czech-republic.png"
+    },
+    {
+      "name": "DOMINICAN-REPUBLIC",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/dominican-republic.png"
+    },
+    {
+      "name": "EUROPEAN-UNION",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/european-union.png"
+    },
+    {
+      "name": "GERMANY",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/germany.png"
+    },
+    {
+      "name": "GUATEMALA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/guatemala.png"
+    },
+    {
+      "name": "GUERNSEY",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/guernsey.png"
+    },
+    {
+      "name": "HAITI",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/haiti.png"
     },
     {
       "name": "HONG-KONG",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/hong-kong.png"
     },
     {
+      "name": "ICELAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/iceland.png"
+    },
+    {
+      "name": "ITALY",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/italy.png"
+    },
+    {
       "name": "JAPAN",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png"
+    },
+    {
+      "name": "LAOS",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/laos.png"
     },
     {
       "name": "MACAO",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/macao.png"
     },
     {
+      "name": "MAURITANIA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/mauritania.png"
+    },
+    {
+      "name": "MAURITIUS",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/mauritius.png"
+    },
+    {
+      "name": "MICRONESIA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/micronesia.png"
+    },
+    {
       "name": "MOROCCO",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/morocco.png"
+    },
+    {
+      "name": "NAURU",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/nauru.png"
     },
     {
       "name": "NEW-ZEALAND",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/new-zealand.png"
     },
     {
+      "name": "NIGERIA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/nigeria.png"
+    },
+    {
+      "name": "NORFOLK-ISLAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/norfolk-island.png"
+    },
+    {
       "name": "NORTH-KOREA",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/north-korea.png"
     },
     {
+      "name": "PALAU",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/palau.png"
+    },
+    {
+      "name": "PORTUGAL",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/portugal.png"
+    },
+    {
+      "name": "RAPA-NUI",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/rapa-nui.png"
+    },
+    {
+      "name": "REPUBLIC-OF-POLAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/republic-of-poland.png"
+    },
+    {
+      "name": "RUSSIA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/russia.png"
+    },
+    {
+      "name": "SCOTLAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/scotland.png"
+    },
+    {
       "name": "SINGAPORE",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png"
+    },
+    {
+      "name": "SOLOMON-ISLANDS",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/solomon-islands.png"
     },
     {
       "name": "SOMALIA",
@@ -41,6 +173,22 @@
     {
       "name": "SOUTH-KOREA",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/south-korea.png"
+    },
+    {
+      "name": "SPAIN",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/spain.png"
+    },
+    {
+      "name": "ST-LUCIA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/st-lucia.png"
+    },
+    {
+      "name": "SWEDEN",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/sweden.png"
+    },
+    {
+      "name": "SWITZERLAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/switzerland.png"
     },
     {
       "name": "TAIWAN",
