@@ -17,7 +17,7 @@ if (fs.existsSync(ICON_DIR)) {
     url: `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${file}`
   }));
 
-  fs.writeFileSync(ICON_OUTPUT, JSON.stringify({ name: "App Icons", icons }, null, 2));
+  fs.writeFileSync(ICON_OUTPUT, JSON.stringify({ name: "Ios 26 AppStore Icons", icons }, null, 2));
   console.log(`✅ icons.json 生成完成！共 ${icons.length} 个`);
 }
 
@@ -39,7 +39,7 @@ if (fs.existsSync(FLAGS_DIR)) {
   // 构建符合 Loon 规范的对象
   const flagsJsonData = {
     name: "Flags / 旗帜",
-    description: "由脚本自动生成的旗帜图标库",
+    description: "escapism的旗帜图标库",
     icons: flagIconsArray // 必须叫 icons
   };
 
