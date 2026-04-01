@@ -1,0 +1,21 @@
+{
+  "name": "Flags / 旗帜",
+  "flags": [
+    {
+      "name": "AD",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ad.png"
+    },
+    {
+      "name": "AE",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ae.png"
+    },
+    {
+      "name": "AF",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/af.png"
+    },
+    {
+      "name": "AG",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ag.png"
+    }
+  ]
+}
