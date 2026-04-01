@@ -1,6 +1,7 @@
 {
   "name": "Flags / 旗帜",
-  "flags": [
+  "description": "由脚本自动生成的旗帜图标库",
+  "icons": [
     {
       "name": "CHINA",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/china.png"
@@ -26,8 +27,16 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/new-zealand.png"
     },
     {
+      "name": "NORTH-KOREA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/north-korea.png"
+    },
+    {
       "name": "SINGAPORE",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png"
+    },
+    {
+      "name": "SOMALIA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/somalia.png"
     },
     {
       "name": "SOUTH-KOREA",
@@ -36,6 +45,10 @@
     {
       "name": "TAIWAN",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/taiwan.png"
+    },
+    {
+      "name": "TURKEY",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/turkey.png"
     },
     {
       "name": "UKRAINE",
