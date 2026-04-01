@@ -2,28 +2,36 @@
   "name": "Flags / 旗帜",
   "flags": [
     {
-      "name": "SQUARE-2",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/square-2.png"
+      "name": "CHINA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/china.png"
     },
     {
-      "name": "SQUARE-4",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/square-4.png"
+      "name": "JAPAN",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png"
     },
     {
-      "name": "SQUARE-5",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/square-5.png"
+      "name": "KOREA",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/korea.png"
     },
     {
-      "name": "SQUARE-6",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/square-6.png"
+      "name": "NEWZEALAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/newzealand.png"
     },
     {
-      "name": "SQUARE-7",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/square-7.png"
+      "name": "PEOPLE",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/people.png"
     },
     {
-      "name": "SQUARE",
-      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/square.png"
+      "name": "UKRAINE",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ukraine.png"
+    },
+    {
+      "name": "UNITED KINDOM",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united kindom.png"
+    },
+    {
+      "name": "UNITED STATES",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united states.png"
     }
   ]
 }
