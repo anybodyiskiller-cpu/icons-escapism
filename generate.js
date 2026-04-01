@@ -4,28 +4,35 @@ const path = require("path");
 const ICON_DIR = "./icons";
 const OUTPUT = "./icons.json";
 
-console.log("🚀 生成 icons.json...");
+const categories = fs.readdirSync(ICON_DIR)
+  .filter(dir => fs.statSync(path.join(ICON_DIR, dir)).isDirectory());
 
-const files = fs.readdirSync(ICON_DIR)
-  .filter(file => file.toLowerCase().endsWith('.png'))
-  .sort();
+let allIcons = [];
 
-const icons = files.map(file => {
-  const name = path.basename(file, '.png')
-    .replace(/[-_]/g, ' ')
-    .trim();
+// 处理每个分类文件夹（flags 和以后可能加的其他分类）
+categories.forEach(category => {
+  const dirPath = path.join(ICON_DIR, category);
+  const files = fs.readdirSync(dirPath)
+    .filter(file => file.toLowerCase().endsWith('.png'))
+    .sort();
 
-  return {
-    "name": name,
-    "url": `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${file}`
-  };
+  files.forEach(file => {
+    const name = path.basename(file, '.png')
+      .replace(/[-_]/g, ' ')
+      .trim();
+
+    allIcons.push({
+      "name": `${category}/${name}`,
+      "url": `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${category}/${file}`,
+      "category": category
+    });
+  });
 });
 
-// 关键修改：包一层对象，很多 App 要求这样
 const result = {
-  "name": "My Icon Pack",     // 可以随便改
-  "icons": icons
+  "name": "Escapism Icon Pack",
+  "icons": allIcons
 };
 
 fs.writeFileSync(OUTPUT, JSON.stringify(result, null, 2));
-console.log(`✅ 生成完成！共 ${icons.length} 个图标`);
+console.log(`✅ 生成完成！共 ${allIcons.length} 个图标（含 flags 文件夹）`);
