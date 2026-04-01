@@ -1,38 +1,52 @@
 const fs = require("fs");
 const path = require("path");
 
-const ICON_DIR = "./icons";
-const OUTPUT = "./icons.json";
-
-const categories = fs.readdirSync(ICON_DIR)
-  .filter(dir => fs.statSync(path.join(ICON_DIR, dir)).isDirectory());
-
-let allIcons = [];
-
-// 处理每个分类文件夹（flags 和以后可能加的其他分类）
-categories.forEach(category => {
-  const dirPath = path.join(ICON_DIR, category);
-  const files = fs.readdirSync(dirPath)
+// ====================== 生成普通图标 JSON ======================
+function generateMainIcons() {
+  const ICON_DIR = "./icons";
+  const files = fs.readdirSync(ICON_DIR)
     .filter(file => file.toLowerCase().endsWith('.png'))
     .sort();
 
-  files.forEach(file => {
-    const name = path.basename(file, '.png')
-      .replace(/[-_]/g, ' ')
-      .trim();
-
-    allIcons.push({
-      "name": `${category}/${name}`,
-      "url": `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${category}/${file}`,
-      "category": category
-    });
+  const icons = files.map(file => {
+    const name = path.basename(file, '.png').replace(/[-_]/g, ' ').trim();
+    return {
+      name: name,
+      url: `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${file}`,
+      category: "default"
+    };
   });
-});
 
-const result = {
-  "name": "Escapism Icon Pack",
-  "icons": allIcons
-};
+  fs.writeFileSync("./icons.json", JSON.stringify({ name: "Escapism Icon Pack", icons }, null, 2));
+  console.log(`✅ icons.json 生成完成！共 ${icons.length} 个图标`);
+}
 
-fs.writeFileSync(OUTPUT, JSON.stringify(result, null, 2));
-console.log(`✅ 生成完成！共 ${allIcons.length} 个图标（含 flags 文件夹）`);
+// ====================== 生成国旗专用 JSON ======================
+function generateFlags() {
+  const FLAGS_DIR = "./flags";
+  
+  if (!fs.existsSync(FLAGS_DIR)) {
+    console.log("⚠️ flags 文件夹不存在，请先创建");
+    return;
+  }
+
+  const files = fs.readdirSync(FLAGS_DIR)
+    .filter(file => file.toLowerCase().endsWith('.png'))
+    .sort();
+
+  const flags = files.map(file => {
+    const name = path.basename(file, '.png').toUpperCase();
+    return {
+      name: name,
+      url: `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/${file}`,
+      category: "flags"
+    };
+  });
+
+  fs.writeFileSync("./flags.json", JSON.stringify({ name: "Escapism Flags Pack", icons: flags }, null, 2));
+  console.log(`✅ flags.json 生成完成！共 ${flags.length} 个国旗`);
+}
+
+// 执行
+generateMainIcons();
+generateFlags();
