@@ -30,6 +30,10 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bahamute.png"
     },
     {
+      "name": "bili",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bili.png"
+    },
+    {
       "name": "bilibili",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bilibili.png"
     },
@@ -44,6 +48,10 @@
     {
       "name": "blond",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/blond.png"
+    },
+    {
+      "name": "burgerking",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/burgerking.png"
     },
     {
       "name": "chatgpt",
@@ -234,12 +242,20 @@
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/soundcloud.png"
     },
     {
+      "name": "spark",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spark.png"
+    },
+    {
       "name": "speetest",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png"
     },
     {
       "name": "spotify",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png"
+    },
+    {
+      "name": "starbucks",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/starbucks.png"
     },
     {
       "name": "stash",
