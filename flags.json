@@ -1,6 +1,6 @@
 {
   "name": "Flags / 旗帜",
-  "description": "由脚本自动生成的旗帜图标库",
+  "description": "escapism的旗帜图标库",
   "icons": [
     {
       "name": "ARGENTINA",
@@ -65,6 +65,10 @@
     {
       "name": "GERMANY",
       "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/germany.png"
+    },
+    {
+      "name": "GREENLAND",
+      "url": "https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/greenland.png"
     },
     {
       "name": "GUATEMALA",
