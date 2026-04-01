@@ -1,52 +1,38 @@
 const fs = require("fs");
 const path = require("path");
 
-// ====================== 生成普通图标 JSON ======================
-function generateMainIcons() {
-  const ICON_DIR = "./icons";
-  const files = fs.readdirSync(ICON_DIR)
+// 处理 icons
+const ICON_DIR = "./icons";
+const ICON_OUTPUT = "./icons.json";
+
+console.log("🚀 生成 icons.json...");
+const iconFiles = fs.readdirSync(ICON_DIR)
+  .filter(file => file.toLowerCase().endsWith('.png'))
+  .sort();
+
+const icons = iconFiles.map(file => ({
+  "name": path.basename(file, '.png').replace(/[-_]/g, ' ').trim(),
+  "url": `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${file}`
+}));
+
+fs.writeFileSync(ICON_OUTPUT, JSON.stringify({ "name": "My Icon Pack", "icons": icons }, null, 2));
+console.log(`✅ icons.json 生成完成！共 ${icons.length} 个`);
+
+// 处理 flags（新增部分）
+const FLAGS_DIR = "./flags";
+const FLAGS_OUTPUT = "./flags.json";
+
+if (fs.existsSync(FLAGS_DIR)) {
+  console.log("🚀 生成 flags.json...");
+  const flagFiles = fs.readdirSync(FLAGS_DIR)
     .filter(file => file.toLowerCase().endsWith('.png'))
     .sort();
 
-  const icons = files.map(file => {
-    const name = path.basename(file, '.png').replace(/[-_]/g, ' ').trim();
-    return {
-      name: name,
-      url: `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/${file}`,
-      category: "default"
-    };
-  });
+  const flags = flagFiles.map(file => ({
+    "name": path.basename(file, '.png').toUpperCase(),
+    "url": `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/${file}`
+  }));
 
-  fs.writeFileSync("./icons.json", JSON.stringify({ name: "Escapism Icon Pack", icons }, null, 2));
-  console.log(`✅ icons.json 生成完成！共 ${icons.length} 个图标`);
+  fs.writeFileSync(FLAGS_OUTPUT, JSON.stringify({ "name": "Flags", "flags": flags }, null, 2));
+  console.log(`✅ flags.json 生成完成！共 ${flags.length} 个`);
 }
-
-// ====================== 生成国旗专用 JSON ======================
-function generateFlags() {
-  const FLAGS_DIR = "./flags";
-  
-  if (!fs.existsSync(FLAGS_DIR)) {
-    console.log("⚠️ flags 文件夹不存在，请先创建");
-    return;
-  }
-
-  const files = fs.readdirSync(FLAGS_DIR)
-    .filter(file => file.toLowerCase().endsWith('.png'))
-    .sort();
-
-  const flags = files.map(file => {
-    const name = path.basename(file, '.png').toUpperCase();
-    return {
-      name: name,
-      url: `https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/${file}`,
-      category: "flags"
-    };
-  });
-
-  fs.writeFileSync("./flags.json", JSON.stringify({ name: "Escapism Flags Pack", icons: flags }, null, 2));
-  console.log(`✅ flags.json 生成完成！共 ${flags.length} 个国旗`);
-}
-
-// 执行
-generateMainIcons();
-generateFlags();
