@@ -17,13 +17,13 @@ const CONFIG = {
   ICON_COLLECTION_NAME: "AppStore Icons",     // 标题
   
   // ←←← 这里就是你想要的「标题下面的自定义文字」←←←
-  ICON_DESCRIPTION: "escapism 个人精选 iOS 图标库\n持续更新中",
+  ICON_DESCRIPTION: "iOS 图标库\n持续更新中 音乐封面可无视",
 
   // ==================== flags 配置 ====================
   FLAGS_DIR: "./flags",
   FLAGS_OUTPUT: "./flags.json",
   FLAGS_COLLECTION_NAME: "Flags / 旗帜",
-  FLAGS_DESCRIPTION: "escapism 的各国旗帜图标库",
+  FLAGS_DESCRIPTION: "各国方块圆角旗帜图标库",
   
   USE_MINIFY: true,          // 推荐保持 true（压缩格式更稳定）
   ESCAPE_URL: false,         // 大部分情况保持 false 即可
