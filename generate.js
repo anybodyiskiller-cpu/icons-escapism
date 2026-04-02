@@ -4,38 +4,54 @@ const path = require("path");
 console.log("🚀 开始生成 JSON 文件...");
 
 // ====================== 【可修改配置区】======================
-// 以后你主要改这里就够了
-
 const CONFIG = {
   GITHUB_USER: "anybodyiskiller-cpu",
   GITHUB_REPO: "icons-escapism",
   BRANCH: "main",
-
-  // ==================== icons 配置 ====================
-  ICON_DIR: "./icons",
-  ICON_OUTPUT: "./icons.json",
-  ICON_COLLECTION_NAME: "AppStore Icons",     // 标题
-  
-  // ←←← 这里就是你想要的「标题下面的自定义文字」←←←
-  ICON_DESCRIPTION: "iOS 图标库\n持续更新中 音乐封面可无视",
-
-  // ==================== flags 配置 ====================
-  FLAGS_DIR: "./flags",
-  FLAGS_OUTPUT: "./flags.json",
-  FLAGS_COLLECTION_NAME: "Flags / 旗帜",
-  FLAGS_DESCRIPTION: "各国方块圆角旗帜图标库",
-  
-  USE_MINIFY: true,          // 推荐保持 true（压缩格式更稳定）
-  ESCAPE_URL: false,         // 大部分情况保持 false 即可
+  USE_MINIFY: true,
 };
 
-// ====================== 生成 icons.json ======================
-if (fs.existsSync(CONFIG.ICON_DIR)) {
-  const iconFiles = fs.readdirSync(CONFIG.ICON_DIR)
-    .filter(f => f.toLowerCase().endsWith('.png') || f.toLowerCase().endsWith('.PNG'))
+// ==================== 集合配置（新增文件夹就在这里加） ====================
+const COLLECTIONS = [
+  {
+    folder: "icons",
+    output: "icons.json",
+    name: "AppStore Icons",
+    description: "iOS 图标库\n持续更新中"
+  },
+  {
+    folder: "flags",
+    output: "flags.json",
+    name: "Flags / 旗帜",
+    description: "方块圆角旗帜图标库"
+  },
+  {
+    folder: "music",                    // ← 新增
+    output: "music.json",               // ← 生成 music.json
+    name: "Music / 音乐封面",
+    description: "音乐专辑封面 & 歌手图标\n可无视尺寸差异"
+  }
+  // 以后想加新的，直接复制下面这段继续加
+  // ,{
+  //   folder: "apps",
+  //   output: "apps.json",
+  //   name: "Apps / 应用",
+  //   description: "第三方应用图标"
+  // }
+];
+
+function processCollection(col) {
+  const dir = `./${col.folder}`;
+  if (!fs.existsSync(dir)) {
+    console.log(`⚠️  文件夹 ${col.folder} 不存在，跳过`);
+    return;
+  }
+
+  const files = fs.readdirSync(dir)
+    .filter(f => f.toLowerCase().endsWith('.png'))
     .sort();
 
-  const icons = iconFiles.map(file => {
+  const icons = files.map(file => {
     let name = path.basename(file, path.extname(file));
     name = name
       .replace(/[-_]/g, ' ')
@@ -45,45 +61,23 @@ if (fs.existsSync(CONFIG.ICON_DIR)) {
 
     return {
       name: name,
-      url: `https://raw.githubusercontent.com/${CONFIG.GITHUB_USER}/${CONFIG.GITHUB_REPO}/${CONFIG.BRANCH}/icons/${file}`
+      url: `https://raw.githubusercontent.com/${CONFIG.GITHUB_USER}/${CONFIG.GITHUB_REPO}/${CONFIG.BRANCH}/${col.folder}/${file}`
     };
   });
 
-  const iconsData = {
-    name: CONFIG.ICON_COLLECTION_NAME,
-    description: CONFIG.ICON_DESCRIPTION,     // ← 这行就是关键
+  const data = {
+    name: col.name,
+    description: col.description,
     icons: icons
   };
 
-  const jsonString = CONFIG.USE_MINIFY ? JSON.stringify(iconsData) : JSON.stringify(iconsData, null, 2);
-  fs.writeFileSync(CONFIG.ICON_OUTPUT, jsonString);
-  
-  console.log(`✅ icons.json 生成完成！共 ${icons.length} 个图标`);
-  console.log(`   标题: ${CONFIG.ICON_COLLECTION_NAME}`);
-  console.log(`   描述: ${CONFIG.ICON_DESCRIPTION}`);
+  const jsonString = CONFIG.USE_MINIFY ? JSON.stringify(data) : JSON.stringify(data, null, 2);
+  fs.writeFileSync(col.output, jsonString);
+
+  console.log(`✅ ${col.output} 生成完成！共 ${icons.length} 个图标`);
 }
 
-// ====================== 生成 flags.json ======================
-if (fs.existsSync(CONFIG.FLAGS_DIR)) {
-  const flagFiles = fs.readdirSync(CONFIG.FLAGS_DIR)
-    .filter(f => f.toLowerCase().endsWith('.png') || f.toLowerCase().endsWith('.PNG'))
-    .sort();
+// 执行所有集合
+COLLECTIONS.forEach(processCollection);
 
-  const flagIcons = flagFiles.map(file => ({
-    name: path.basename(file, path.extname(file)).toUpperCase().replace(/[-_]/g, ''),
-    url: `https://raw.githubusercontent.com/${CONFIG.GITHUB_USER}/${CONFIG.GITHUB_REPO}/${CONFIG.BRANCH}/flags/${file}`
-  }));
-
-  const flagsData = {
-    name: CONFIG.FLAGS_COLLECTION_NAME,
-    description: CONFIG.FLAGS_DESCRIPTION,
-    icons: flagIcons
-  };
-
-  const jsonString = CONFIG.USE_MINIFY ? JSON.stringify(flagsData) : JSON.stringify(flagsData, null, 2);
-  fs.writeFileSync(CONFIG.FLAGS_OUTPUT, jsonString);
-  
-  console.log(`✅ flags.json 生成完成！共 ${flagIcons.length} 个`);
-}
-
-console.log("🎉 所有 JSON 生成完毕！");
+console.log("🎉 全部 JSON 生成完毕！");
