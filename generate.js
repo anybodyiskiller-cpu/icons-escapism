@@ -3,7 +3,6 @@ const path = require("path");
 
 console.log("🚀 开始生成 JSON 文件...");
 
-// ====================== 【可修改配置区】======================
 const CONFIG = {
   GITHUB_USER: "anybodyiskiller-cpu",
   GITHUB_REPO: "icons-escapism",
@@ -11,7 +10,6 @@ const CONFIG = {
   USE_MINIFY: true,
 };
 
-// ==================== 集合配置（新增文件夹就在这里加） ====================
 const COLLECTIONS = [
   {
     folder: "icons",
@@ -23,27 +21,20 @@ const COLLECTIONS = [
     folder: "flags",
     output: "flags.json",
     name: "Flags / 旗帜",
-    description: "方块圆角旗帜图标库"
+    description: "各国方块圆角旗帜图标库"
   },
   {
-    folder: "music",                    // ← 新增
-    output: "music.json",               // ← 生成 music.json
+    folder: "music",
+    output: "music.json",
     name: "Music / 音乐封面",
     description: "音乐专辑封面 & 歌手图标\n可无视尺寸差异"
   }
-  // 以后想加新的，直接复制下面这段继续加
-  // ,{
-  //   folder: "apps",
-  //   output: "apps.json",
-  //   name: "Apps / 应用",
-  //   description: "第三方应用图标"
-  // }
 ];
 
 function processCollection(col) {
   const dir = `./${col.folder}`;
   if (!fs.existsSync(dir)) {
-    console.log(`⚠️  文件夹 ${col.folder} 不存在，跳过`);
+    console.log(`⚠️ 文件夹 ${col.folder} 不存在，跳过`);
     return;
   }
 
@@ -77,7 +68,6 @@ function processCollection(col) {
   console.log(`✅ ${col.output} 生成完成！共 ${icons.length} 个图标`);
 }
 
-// 执行所有集合
 COLLECTIONS.forEach(processCollection);
 
 console.log("🎉 全部 JSON 生成完毕！");
