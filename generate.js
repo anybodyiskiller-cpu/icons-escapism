@@ -62,12 +62,9 @@ function processCollection(col) {
     icons: icons
   };
 
-  const jsonString = CONFIG.USE_MINIFY ? JSON.stringify(data) : JSON.stringify(data, null, 2);
-  fs.writeFileSync(col.output, jsonString);
-
+  fs.writeFileSync(col.output, JSON.stringify(data));
   console.log(`✅ ${col.output} 生成完成！共 ${icons.length} 个图标`);
 }
 
 COLLECTIONS.forEach(processCollection);
-
 console.log("🎉 全部 JSON 生成完毕！");
