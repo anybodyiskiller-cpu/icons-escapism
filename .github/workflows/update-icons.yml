@@ -3,36 +3,42 @@ name: Auto Update Icons
 on:
   push:
     paths:
-      - '**/*.png'   # 🔥 监听所有 png（icons + flags 都包含）
+      - 'icons/**/*.png'
+      - 'flags/**/*.png'
+  workflow_dispatch:        # ← 关键：允许手动触发
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Run script
+      - name: Run generate.js
         run: node generate.js
 
-      - name: Commit and Push
+      - name: Commit and Push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          git add *.json
+          git add icons.json flags.json
+          
           if git diff --staged --quiet; then
-            echo "没有变化，无需提交"
+            echo "✅ 没有检测到 JSON 变化，无需提交"
           else
             git commit -m "auto update json"
             git push
+            echo "🚀 JSON 文件已更新并推送"
           fi
