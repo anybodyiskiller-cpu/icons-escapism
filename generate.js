@@ -14,8 +14,8 @@ const COLLECTIONS = [
   {
     folder: "icons",
     output: "icons.json",
-    name: "AppStore Icons",
-    description: "iOS 图标库\n持续更新中"
+    name: "AppStore icons",
+    description: "Ios商店版本图标随缘更新/觉得好的话让爷叔摸下吕"
   },
   {
     folder: "flags",
