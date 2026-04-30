@@ -10,6 +10,14 @@ const CONFIG = {
   USE_MINIFY: true,
 };
 
+const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp"]);
+
+function encodePathSegment(segment) {
+  return encodeURIComponent(segment).replace(/[!'()*]/g, char =>
+    `%${char.charCodeAt(0).toString(16).toUpperCase()}`
+  );
+}
+
 const COLLECTIONS = [
   {
     folder: "icons",
@@ -39,7 +47,7 @@ function processCollection(col) {
   }
 
   const files = fs.readdirSync(dir)
-    .filter(f => f.toLowerCase().endsWith('.png'))
+    .filter(file => IMAGE_EXTENSIONS.has(path.extname(file).toLowerCase()))
     .sort();
 
   const icons = files.map(file => {
@@ -52,7 +60,7 @@ function processCollection(col) {
 
     return {
       name: name,
-      url: `https://raw.githubusercontent.com/${CONFIG.GITHUB_USER}/${CONFIG.GITHUB_REPO}/${CONFIG.BRANCH}/${col.folder}/${file}`
+      url: `https://raw.githubusercontent.com/${CONFIG.GITHUB_USER}/${CONFIG.GITHUB_REPO}/${CONFIG.BRANCH}/${col.folder}/${encodePathSegment(file)}`
     };
   });
 
