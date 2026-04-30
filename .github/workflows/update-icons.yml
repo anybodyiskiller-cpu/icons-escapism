@@ -3,10 +3,11 @@ name: Auto Update Icons
 on:
   push:
     paths:
-      - "icons/**/*.png"
-      - "flags/**/*.png"
-      - "music/**/*.png"
+      - "icons/**"
+      - "flags/**"
+      - "music/**"
       - "generate.js"
+      - ".github/workflows/update-icons.yml"
   workflow_dispatch:
 
 permissions:
@@ -28,6 +29,31 @@ jobs:
 
       - name: Run generate.js
         run: node generate.js
+
+      - name: Validate generated JSON
+        run: |
+          node - <<'NODE'
+          const fs = require("fs");
+          for (const file of ["icons.json", "flags.json", "music.json"]) {
+            const data = JSON.parse(fs.readFileSync(file, "utf8"));
+            if (!Array.isArray(data.icons)) {
+              throw new Error(`${file} missing icons array`);
+            }
+            for (const icon of data.icons) {
+              if (!icon.name || !icon.url) {
+                throw new Error(`${file} contains an invalid icon entry`);
+              }
+              const parsed = new URL(icon.url);
+              if (parsed.href !== icon.url) {
+                throw new Error(`${file} contains a non-canonical URL: ${icon.url}`);
+              }
+              if (/[\s"'<>]/.test(icon.url)) {
+                throw new Error(`${file} contains an unsafe URL: ${icon.url}`);
+              }
+            }
+            console.log(`${file}: ${data.icons.length} icons`);
+          }
+          NODE
 
       - name: Commit and Push changes
         run: |
