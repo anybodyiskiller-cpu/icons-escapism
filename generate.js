@@ -70,7 +70,7 @@ function processCollection(col) {
     icons: icons
   };
 
-  fs.writeFileSync(col.output, JSON.stringify(data));
+  fs.writeFileSync(col.output, `${JSON.stringify(data, null, 2)}\n`);
   console.log(`✅ ${col.output} 生成完成！共 ${icons.length} 个图标`);
 }
 
